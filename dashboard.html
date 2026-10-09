@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SWOOP — Instagram Post Saver</title><link rel="icon" href="icons/icon-32.png" type="image/png"><link rel="stylesheet" href="dashboard.css"></head>
+<body>
+<main>
+  <header><img class="logo" src="assets/swoop.png" alt="SWOOP" width="112" height="112"><div><p class="eyebrow">SWOOP · INSTAGRAM POST SAVER</p><h1>Keep the post.<br>Keep the context.</h1></div></header>
+  <p class="intro">Photos, videos, and every carousel item — with the account username and full caption saved alongside them.</p>
+  <div class="toolbar"><button id="scan">Read open post</button><button id="save" class="primary" disabled>Download post</button></div>
+  <p id="status" role="status" aria-live="polite">Open an Instagram post, then click the extension icon.</p>
+  <section id="post" hidden aria-label="Post preview">
+    <div class="post-heading"><h2 id="username"></h2><span id="count" class="badge"></span></div>
+    <a id="post-link" target="_blank" rel="noopener noreferrer">View on Instagram ↗</a>
+    <p id="caption" class="caption"></p>
+    <ol id="media" class="media"></ol>
+    <p id="folder" class="folder"></p>
+  </section>
+  <div class="toolbar"><button id="add-bulk" disabled>Add to bulk queue</button><button id="open-bulk">Bulk downloads</button><button id="open-schedule" disabled>Schedule this post</button></div>
+  <footer>Everything saves to your computer. No third-party download service.<br>Keep this tab open until downloads finish. Instagram must allow you to view the post.</footer>
+</main>
+<script type="module" src="dashboard.js"></script>
+</body></html>
